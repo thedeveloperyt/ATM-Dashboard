@@ -1,104 +1,102 @@
 
-Full Column Names
-1. BANK: Bank Name
-2. ATM ID: Automated Teller Machine Identification Number
-3. STATE: State Location
-4. Effective Days: Number of Days the ATM was Operational
-5. Financial Transactions: Number of Financial Transactions
-6. Non-Financial Transactions: Number of Non-Financial Transactions
-7. Monthly Transactions: Total Number of Transactions Per Month
-8. Average Financial Transactions: Average Number of Financial Transactions Per Day
-9. Average Non-Financial Transactions: Average Number of Non-Financial Transactions Per Day
-10. Average Total Transactions: Average Total Number of Transactions Per Day
-11. Monthly Revenue: Revenue Generated Per Month
-12. MHA Revenue: Managed Hosting Agreement Revenue
-13. ATM Revenue: Revenue Generated Specifically from the ATM
-14. Total CRA: Total Cost Recovery Agreement
-15. MHA Cost: Managed Hosting Agreement Cost
-16. Spare Replacement (SLM) (Asset OEM): Spare Replacement Cost for Self-Learning Mode (Asset OEM)
-17. Site Maintenance (Non-Asset): Cost for Non-Asset Site Maintenance
-18. Spare Replacement (AC): Spare Replacement Cost for Air Conditioning
-19. Spare Replacement (UPS): Spare Replacement Cost for Uninterruptible Power Supply
-20. One-time Cost: Any One-time Costs Incurred
-21. FLM Supplies: First Line Maintenance Supplies Cost
-22. UPS AMC: Annual Maintenance Contract Cost for UPS
-23. ATM AMC: Annual Maintenance Contract Cost for ATM
-24. VSAT AMC: Annual Maintenance Contract Cost for Very Small Aperture Terminal (VSAT)
-25. Bandwidth and Backhaul: Cost for Bandwidth and Backhaul
-26. E-Surveillance: Cost for Electronic Surveillance
-27. Housekeeping: Housekeeping Cost
-28. Electric Bill: Cost of Electricity
-29. Rent: Rent Cost
-30. Insurance: Insurance Cost
-31. EJ Compensation: Electronic Journal Compensation Cost
-32. Penalty: Any Penalty Incurred
-33. Total Cost: Total Operational Cost
-34. Gross Profit: Total Gross Profit
-35. Gross Profit Percentage: Gross Profit Percentage
-36. Quarter: Financial Quarter
-37. ATM Type: Type of ATM
-38. Margin Range: Profit Margin Range
-39. Current Month Transaction Range: Transaction Range for the Current Month
-40. Previous Month Transaction Range: Transaction Range for the Previous Month
-41. Previous 2nd Month Transaction Range: Transaction Range for the Second Previous Month
-42. Current Margin Range Above/Below 0%: Indicates if the Current Margin Range is Above or Below 0%
-43. Previous Month Margin Range Above/Below 0%: Indicates if the Previous Month Margin Range is Above or Below 0%
-44. Previous 2nd Month Margin Range Above/Below 0%: Indicates if the Second Previous Month Margin Range is Above or Below 0%
-45. Previous 3rd Month Margin Range Above/Below 0%: Indicates if the Third Previous Month Margin Range is Above or Below 0%
-46. Category: Category of the ATM
-47. Revenue Performance: Performance Based on Revenue
-48. Up Time: Operational Uptime of the ATM
+1. Month (`onth`)
+2. Bank ATM ID (`BANK ATM id`)
+3. State (`STATE`)
+4. Effective Days (`Effective days`)
+5. Financial Transactions (`Fin Txn`)
+6. Non-Financial Transactions (`Non Fin Txn`)
+7. Monthly Transactions (`Monthly Txn`)
+8. Average Financial Transactions (`AVG Fin Txn`)
+9. Average Non-Financial Transactions (`AVG Non Fin Txn`)
+10. Average Total Transactions (`AVG Total TXN`)
+11. Monthly Revenue (`Monthly Rev`)
+12. MHA Revenue (`MHA Revenue`)
+13. ATM Revenue (`ATM Rev`)
+14. Total CRA (`Total CRA`)
+15. MHA Cost (`MHA Cost`)
+16. Spare Replacement (SLM Asset OEM) (`Spare Rep. (SLM) (AssetOEM)`)
+17. Site Maintenance (Non Asset) (`Site Maint (Non Asset)`)
+18. Spare Replacement (AC) (`Spare Rep.(AC)`)
+19. Spare Replacement (UPS) (`Spare Rep.(UPS)`)
+20. Onetime Cost (`Onetime Cost`)
+21. FLM Supplies (`FLM SUPPLIES`)
+22. UPS AMC (`UPS AMC`)
+23. ATM AMC (`ATM AMC`)
+24. VSAT AMC (`VSAT AMC`)
+25. Bandwidth and Backhaul (`BW + BCKHL`)
+26. E-Surveillance (`ESURVEILLANCE`)
+27. Housekeeping (`HK`)
+28. Electricity Bill (`SUD EBILL`)
+29. Rent (`RENT`)
+30. Insurance (`Insurance`)
+31. EJ Compensation (`EJ Compensation`)
+32. Penalty (`Penalty`)
+33. Total Cost (`Total Cost`)
+34. Gross Profit (`Gross Profit`)
+35. Gross Profit Percentage (`GROSS PROFIT %`)
+36. Quarter (`Quarter`)
+37. ATM Type (`ATM TYPE`)
+38. Margin Range (`MARGIN RANGE`)
+39. Current Month Transaction Range (`Current Month TXN RANGE`)
+40. Previous Month Transaction Range (`Previous Month TXN RANGE`)
+41. Previous 2nd Month Transaction Range (`Previous 2nd Month TXN RANGE`)
+42. Current Margin Range Above/Below 0% (`Current Margin Range Above/Below 0%`)
+43. Previous Month Margin Range Above/Below 0% (`Previous Month Margin Range Above/Below 0%`)
+44. Previous 2nd Month Margin Range Above/Below 0% (`Previous 2nd Month Margin Range Above/Below 0%`)
+45. Previous 3rd Month Margin Range Above/Below 0% (`Previous 3rd Month Margin Range Above/Below 0%`)
+46. Category (`Category`)
+47. Revenue Performance (`Revenue Performance`)
+48. Up Time (`Up Time`)
 
- Steps to Visualize Data in Power BI
+ Steps to Visualize in Power BI
 
-1. Import Data:
-   - Open Power BI Desktop.
-   - Click on "Get Data" and import your dataset (Excel, CSV, etc.).
+1. Data Preparation:
+   - Import your dataset into Power BI.
+   - Ensure all columns are correctly formatted (e.g., dates, numbers, percentages).
 
-2. Data Cleaning and Transformation:
-   - Use Power Query Editor to clean and transform your data. Ensure all columns have appropriate data types.
+2. Creating Visualizations:
 
-3. Creating Relationships:
-   - If you have multiple tables, ensure they are related correctly using primary and foreign keys.
+   Dashboard Overview:
+   - Card Visualizations for key metrics such as Total Monthly Revenue, Total Gross Profit, Total Transactions, etc.
+   - Line Charts for trends over time, e.g., Monthly Revenue, Total Transactions, Gross Profit, etc.
+   - Bar Charts for comparing different ATMs, States, or Categories in terms of revenue, transactions, or costs.
 
-4. Building Visuals:
-   Bar/Column Charts: Show Financial and Non-Financial Transactions, Monthly Transactions, and Revenue.
-   Pie/Donut Charts: Show the distribution of Cost Types (e.g., Site Maintenance, Spare Replacement).
-   Line Charts: Show trends over time for Transactions, Revenue, and Costs.
-   Cards/KPIs: Display key metrics like Total Revenue, Total Cost, Gross Profit, and Up Time.
+   Detailed Analysis:
+   - Stacked Bar/Column Charts to show the breakdown of costs (e.g., Spare Replacement, Site Maintenance, AMC Costs).
+   - Pie Charts for the distribution of ATM Types or Categories.
+   - Scatter Plots to analyze the relationship between transactions and revenue, or profit margins and cost.
 
-5. Using Filters and Slicers:
-   - Add filters and slicers to enable dynamic data analysis. For instance, you can filter by State, ATM Type, Quarter, etc.
+   Performance Indicators:
+   - Gauge Charts for showing metrics like Up Time, Gross Profit Percentage, and Revenue Performance.
+   - Heat Maps for geographic analysis of ATMs by state, showing performance metrics.
 
-6. Setting Up Dashboards:
-   - Arrange your visuals in a coherent dashboard. Group related visuals together for better insights.
+   Time Series Analysis:
+   - Line Graphs to compare trends across different quarters or months.
+   - Area Charts for cumulative analysis of revenue or costs over time.
 
- Example Visuals and Insights
+   Comparative Analysis:
+   - Tables with Conditional Formatting to highlight ATMs with the highest/lowest performance.
+   - Matrix Visuals to break down revenue and cost by various dimensions such as State, Category, ATM Type, etc.
 
-1. Monthly Revenue and Cost Analysis:
-   Visual: Clustered Bar Chart
-   Insight: Compare Monthly Revenue against Total Cost to visualize profitability.
+3. Insights and Analysis:
+   - Identify top-performing ATMs and states.
+   - Analyze cost components to identify major cost drivers.
+   - Assess the impact of maintenance and replacement costs on overall profitability.
+   - Compare the performance of different ATM types.
+   - Track changes in revenue and profit margins over time and investigate the reasons for significant changes.
 
-2. Transaction Trends:
-   Visual: Line Chart
-   Insight: Observe trends in Financial and Non-Financial Transactions over months.
+ Example Visualizations
 
-3. Cost Breakdown:
-   Visual: Stacked Column Chart
-   Insight: Breakdown of different cost components (e.g., Maintenance, Spare Parts).
+- Revenue vs. Cost Analysis:
+  Create a clustered bar chart comparing Monthly Revenue, Total Cost, and Gross Profit for each ATM.
 
-4. Profit Margin Analysis:
-   Visual: Scatter Plot
-   Insight: Scatter plot of Gross Profit Percentage vs. ATM ID to identify which ATMs are most profitable.
+- Trend Analysis:
+  Use a line chart to show the trend of Average Total Transactions and Monthly Revenue over the last year.
 
-5. Geographical Analysis:
-   Visual: Map
-   Insight: Display ATMs on a map to see geographical distribution and performance metrics by state.
+- Geographical Distribution:
+  Use a filled map to show the distribution of ATMs across states, colored by Gross Profit Percentage.
 
- Implementing in Power BI
+- Cost Breakdown:
+  Use a stacked bar chart to show the breakdown of different cost components (e.g., Spare Replacement, Maintenance, AMC Costs) for each ATM.
 
-1. Create Calculated Columns/Measures for complex calculations like Gross Profit Percentage or Average Transactions.
-2. Use Tooltips to show detailed information when hovering over visuals.
-3. Conditional Formatting to highlight important insights (e.g., negative profit margins).
-
-This setup will provide a comprehensive and interactive dashboard that offers clear insights into ATM performance, costs, and profitability.
+By following these steps and suggestions, you'll be able to create a comprehensive and insightful Power BI dashboard to analyze your ATM performance data effectively.
