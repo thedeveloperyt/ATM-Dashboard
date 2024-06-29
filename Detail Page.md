@@ -2,7 +2,7 @@
 
 ### Dashboard Image
 
-![alt text]((https://i.postimg.cc/y6QrMR8R/ATm-dash.jpg))
+![Detail-tab](https://github.com/thedeveloperyt/ATM-Dashboard/assets/169817243/b3473477-af4e-4266-87e7-10c54352d0c5)
 
 ### Cost Analysis (ATM Cost and Maintenance)
 
