@@ -2,8 +2,7 @@
 
 ### Dashboard Image
 
-![ATM Transaction Dashboard](https://i.postimg.cc/y6QrMR8R/ATm-dash.jpg)
-![ATM Transaction Dashboard](https://i.postimg.cc/y6QrMR8R/ATm-dash.jpg)
+https://i.postimg.cc/y6QrMR8R/ATm-dash.jpg
 
 ### Cost Analysis (ATM Cost and Maintenance)
 
